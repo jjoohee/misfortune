@@ -1,0 +1,630 @@
+            @font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;
+	}
+h1, p{ color: white;
+		font-family: 'MapoGoldenPier';}
+p{line-height: 1.9em; word-break: keep-all; font-size: 1.2em;}
+
+#moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;}
+
+		@keyframes lo{
+				from{left: -100px;} to{left: 0px;}
+			}
+		@keyframes ro{
+				from{right: 100px;} to{right: 0px;}
+			}
+
+#titlee{
+	width: 1200px;
+	height: 620px;
+	position: absolute;
+	left: calc(50% - 600px);
+	top: 0px;
+	background: black;
+
+}
+
+#titlee h1{
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	left: calc(50% - 150px);
+	top: calc(50% - 50px);
+	text-align: center;
+	font-size: 3em;
+}
+
+.warp{
+	width: 1200px; height: 5300px; position: absolute;
+	left: calc(50% - 600px);
+	top: 610px;
+	background: black;
+	overflow: hidden;
+}
+
+@media (max-width: 980px){
+	.warp{
+		left: calc(50% - 490px);
+	}
+	#titlee{
+		left: calc(50% - 490px);
+	}
+}
+
+/*이미지 css*/
+
+.cell1{
+	position: absolute;
+	left: calc(50% - 34px);
+	top: 200px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+.cell1:hover{
+	-webkit-filter: contrast(5);
+}
+
+#bigger{
+	position: absolute;
+	top: 250px;
+	overflow: visible;
+	display: block;
+}
+
+#back0{
+	position: absolute;
+	background: url(background.gif);
+	width: 1200px; height: 5500px;
+	top: 1100px;
+}
+
+#back1{
+	position: absolute;
+	left: -10px;
+	top: 1200px;
+
+}
+
+#back2{
+	position: absolute;
+	right: -5px;
+	top: 1700px;
+
+}
+
+#back3{
+	position: absolute;
+	left: -15px;
+	top: 2600px;
+
+}
+
+#back3-1{
+	position: absolute;
+	left: -15px;
+	bottom: 0px;
+
+}
+
+#back4{
+	position: absolute;
+	right: 0px;
+	top: 1300px;
+
+}
+
+#back5{
+	position: absolute;
+	right: -10px;
+	top: 1400px;
+
+}
+.leve{
+	overflow: visible;
+}
+
+#leaf1{
+	position: absolute;
+	top: 0px; left: 100px;
+	animation: ba 2.7s infinite ease-in, le 1s infinite linear alternate;
+}
+
+#leaf2{
+	position: absolute;
+	top: 0px; left: 300px;
+	animation: ba 3.1s infinite ease-in, le 1.3s infinite linear alternate;
+}
+
+#leaf3{
+	position: absolute;
+	top: 0px; left: 500px;
+	animation: ba 2.3s infinite ease-in, le 1.1s infinite linear alternate;
+}
+
+#leaf4{
+	position: absolute;
+	top: 0px; left: 700px;
+	animation: ba 2.4s infinite ease-in, le 0.7s infinite linear alternate;
+}
+
+#leaf5{
+	position: absolute;
+	top: 0px; left: 900px;
+	animation: ba 3s infinite ease-in, le 0.5s infinite linear alternate;
+}
+
+#leaf6{
+	position: absolute;
+	top: 0px; left: 1100px;
+	animation: ba 2s infinite ease-in, le 1.1s infinite linear alternate;
+}
+
+#leaf12{
+	position: absolute;
+	top: 0px; left: 100px;
+	animation: ba 2.7s infinite ease-in, le 1s infinite linear alternate;
+}
+
+#leaf22{
+	position: absolute;
+	top: 0px; left: 300px;
+	animation: ba 3.1s infinite ease-in, le 1.3s infinite linear alternate;
+}
+
+#leaf32{
+	position: absolute;
+	top: 0px; left: 500px;
+	animation: ba 2.3s infinite ease-in, le 1.1s infinite linear alternate;
+}
+
+#leaf42{
+	position: absolute;
+	top: 0px; left: 700px;
+	animation: ba 2.4s infinite ease-in, le 0.7s infinite linear alternate;
+}
+
+#leaf52{
+	position: absolute;
+	top: 0px; left: 900px;
+	animation: ba 3s infinite ease-in, le 0.5s infinite linear alternate;
+}
+
+#leaf62{
+	position: absolute;
+	top: 0px; left: 1100px;
+	animation: ba 2s infinite ease-in, le 1.1s infinite linear alternate;
+}
+
+
+@keyframes ba { 
+				to {top: 1000px; position: absolute; z-index: 0;}
+				from {top: -100px; position: absolute; z-index: 0;}
+			}
+
+@keyframes le { 
+	to {transform: rotate(20deg); position: absolute; z-index: 0;}
+	from {transform: rotate(-20deg); absolute; z-index: 0;}
+} 
+
+#rain1{
+	position: absolute;
+	left: 214px;
+	animation: rr 3s infinite ease-in;
+}
+#rain2{
+	position: absolute;
+	left: 279px;
+	animation: rr 3s 1.3s infinite ease-in;
+}
+#rain3{
+	position: absolute;
+	left: 347px;
+	animation: rr 3s 2.1s infinite ease-in;
+}
+#rain4{
+	position: absolute;
+	left: 413px;
+	animation: rr 3s 1.5s infinite ease-in;
+}
+#rain5{
+	position: absolute;
+	left: 489px;
+	animation: rr 3s 2.4s infinite ease-in;
+}
+
+#rain6{
+	position: absolute;
+	right: 212px;
+	animation: rr 3s 2.3s infinite ease-in;
+}
+
+#rain7{
+	position: absolute;
+	right: 285px;
+	animation: rr 3s 0.3  infinite ease-in;
+}
+#rain8{
+	position: absolute;
+	right: 359px;
+	animation: rr 3s 1.8s infinite ease-in;
+}
+#rain9{
+	position: absolute;
+	right: 435px;
+	animation: rr 3s 2.6s infinite ease-in;
+}
+#rain10{
+	position: absolute;
+	right: 510px;
+	animation: rr 3s 0.5s infinite ease-in;
+}
+
+#rain11{
+	position: absolute;
+	right: 594px;
+	animation: rr 3s 1s infinite ease-in;
+}
+
+@keyframes rr{
+			from{bottom: 2000px;} to{bottom: 500px;}
+		}
+
+
+#tree1{
+	position: absolute;
+	left: -63px; top: 20px; 
+	transition: all 2s; transform: rotateY(10deg);
+	animation: treemove 2s infinite linear alternate;
+}
+
+#tree1_1{
+	position: absolute;
+	right: -63px; top: 20px;
+	animation: treemove-e 2s infinite linear alternate;
+	}
+
+@keyframes treemove { 
+				to {transform: rotate(5deg); position: absolute; z-index: 0;}
+				from{transform: rotate(-5deg); position: absolute; z-index: 0;}
+			}
+
+@keyframes treemove-e { 
+				to {transform: rotate(-5deg); position: absolute; z-index: 0;}
+				from{transform: rotate(5deg); position: absolute; z-index: 0;}
+			}
+
+#bigcell{
+	position: absolute;
+	right: -80px;
+	top: 1120px;
+	animation: treemove-e 0.5s infinite linear alternate, bigcell 0.2s infinite linear alternate;
+}
+@keyframes bigcell { 
+				to {position: absolute; z-index: 0; right: -6%}
+				from{position: absolute; z-index: 0; right: -3%}
+			}
+
+
+#bigcell2{
+	position: absolute;
+	left: 84px;
+	top: 2072px;
+}
+
+#circle1{
+	position: absolute;
+	left: -280px;
+	top: 1700px;
+	animation:io 8s infinite linear;
+}
+
+@keyframes io { 
+				to {transform: rotate(-0deg); position: absolute; z-index: 0;}
+				from{transform: rotate(-360deg); position: absolute; z-index: 0;}
+			} 
+
+#circle1_1{
+	position: absolute;
+	right: -280px;
+	top: 2000px;
+	animation:lo 8s infinite linear;
+}
+
+@keyframes lo { 
+				to {transform: rotate(0deg); position: absolute; z-index: 0;}
+				from{transform: rotate(360deg); position: absolute; z-index: 0;}
+			} 
+#human{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 2330px;
+	filter: brightness(50%);
+	transition: all 0.5s;
+	cursor: pointer;
+
+}
+
+#human:hover{
+	filter: brightness(100%);
+
+}
+
+#human_1{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 2330px;
+	opacity: 0%
+}
+
+#human1{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 2330px;
+	cursor:pointer;
+
+}
+
+
+#human1_1{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 2330px;
+	cursor:pointer;
+	opacity: 0%;
+	transition: all 0.5s;
+}
+
+#human1_1:hover{
+	opacity: 100%;
+}
+
+
+
+#eye_circle{
+	position: absolute;
+	width:22px; height:22px;
+	left: 520px; top: 3160px;
+	background: black;
+	border:1px solid #B42840;
+	border-radius:75px;
+	animation: so 5s linear infinite alternate;
+}
+
+#eye_circle2{
+	position: absolute;
+	width:22px; height:22px;
+	right: 520px; top: 3160px;
+	background: black;
+	border:1px solid #B42840;
+	border-radius:75px;
+	animation: so 5s linear infinite alternate;
+}
+
+@keyframes so { 
+				to {transform: translateX(-65%); position: absolute; z-index: 0;}
+				from {transform: translateX(65%); position: absolute; z-index: 0;}
+			} 
+
+#circle2{
+	position: absolute;
+	left: -280px;
+	top: 3450px;
+	animation:lo 8s infinite ease-in;
+
+}
+
+#circle2_1{
+	position: absolute;
+	right: -280px;
+	top: 3450px;
+	animation:io 8s infinite ease-in;
+}
+
+#hand1{
+	position: absolute;
+	right: 210px;
+	top: 3250px;
+	transition: all 0.5s;
+	
+}
+
+#hand1:hover{
+	opacity: 50%;
+	top:3150px;
+	right: 300px;
+	transform: rotate(-10deg);
+}
+
+
+#hand1-1{
+	position: absolute;
+	left: 210px;
+	top: 3250px;
+	transition: all 0.5s;
+}
+
+#hand1-1:hover{
+	opacity: 50%;
+	top:3100px;
+	left: 250px;
+	transform: rotate(20deg);
+}
+
+#hand2{
+	position: absolute;
+	right: -50px;
+	top: 3080px;
+	transition: all 0.5s;
+
+}
+
+#hand2:hover{
+	opacity: 50%;
+	right: 100px;
+	top: 3000px;
+	transform: rotate(-30deg);
+
+}
+
+#hand3{
+	position: absolute;
+	left: -50px;
+	top: 2940px;
+	transition: all 0.5s;
+}
+
+#hand3:hover{
+	opacity: 50%;
+	left: 100px;
+	top: 3000px;
+	transform: rotate(30deg);
+
+}
+
+#hand4{
+	position: absolute;
+	left: -50px;
+	top: 4000px;
+	animation: haha 1s linear infinite alternate;
+}
+
+#hand4-1{
+	position: absolute;
+	right: -50px;
+	top: 4000px;
+	/*좌우반전*/
+	 -moz-tranform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    animation: hah 1s linear infinite alternate;
+}
+
+@keyframes haha { 
+				to {left: -35px; position: absolute; z-index: 0;}
+			}
+@keyframes hah { 
+				to {right: -35px; position: absolute; z-index: 0;}
+			} 
+
+#hand5{
+	position: absolute;
+	left: 210px;
+	top: 3800px;
+	animation: hahaha 0.9s linear infinite alternate;
+
+}
+
+#hand5-1{
+	position: absolute;
+	right: 210px;
+	top: 3800px;
+/*좌우반전*/
+	 -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    animation: hahah 0.9s linear infinite alternate;
+}
+
+
+@keyframes hahaha { 
+				to {left: 220px; position: absolute; z-index: 0;}
+			}
+@keyframes hahah { 
+				to {right: 220px; position: absolute; z-index: 0;}
+			} 
+
+#tree2{
+	position: absolute;
+	left: -40px; top: 2400px; 
+	animation: treemove 0.5s infinite linear alternate;
+}
+
+#tree2_1{
+	position: absolute;
+	right: -40px; top: 2740px;
+	animation: treemove-e 0.5s infinite linear alternate;
+}
+
+
+#scull{
+	position: absolute;
+	left: calc(50% - 583px);
+	top: 4300px;
+}
+
+#bigcell3{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: calc(50% - 150px);
+	bottom: 900px;
+	animation:io 4s infinite linear alternate;
+}
+
+#tree3{
+	position: absolute;
+	left: -63px; bottom: -3px;
+	animation: treemove-e 2s infinite linear alternate;
+}
+
+#tree3_1{
+	position: absolute;
+	right: -63px; bottom: -3px; 
+	animation: treemove 2s infinite linear alternate;
+}
+
+/*텍스트 css*/
+
+.spanclass{
+	background: black;
+	padding: 2px;
+}
+
+.maintext{
+	width: 600px; height: 300px;
+	left: calc(50% - 300px);
+	top: 50px;
+	position: absolute;
+	text-align: center;
+}
+
+#text1{
+	top: 600px;
+}
+
+#text2{
+	top: 1500px;
+	left: -50px;
+}
+
+#text3{
+	top: 2300px;
+	left: -50px;
+}
+
+#text4{
+	top: 2600px;
+	left: 655px;
+}
+
+#text5{
+	top: 3600px;
+}
+
+#text6{
+	top: 4540px;
+}
