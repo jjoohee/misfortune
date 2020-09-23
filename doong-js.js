@@ -74,3 +74,11 @@ window.onscroll = function(){
         
     }
 });
+
+//로딩화면
+
+window.onload = function () {
+document.getElementById("loadingIndicator").style.opacity = "0";
+setTimeout(function() {
+    document.getElementById("loadingIndicator").style.display = "none";}, 450);
+}
