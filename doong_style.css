@@ -249,64 +249,64 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 #rain1{
 	position: absolute;
 	left: 214px;
-	animation: rr 3s infinite ease-in;
+	animation: rr 4s infinite ease-in;
 }
 #rain2{
 	position: absolute;
 	left: 279px;
-	animation: rr 3s 1.3s infinite ease-in;
+	animation: rr 4s 1.3s infinite ease-in;
 }
 #rain3{
 	position: absolute;
 	left: 347px;
-	animation: rr 3s 2.1s infinite ease-in;
+	animation: rr 4s 2.1s infinite ease-in;
 }
 #rain4{
 	position: absolute;
 	left: 413px;
-	animation: rr 3s 1.5s infinite ease-in;
+	animation: rr 4s 1.5s infinite ease-in;
 }
 #rain5{
 	position: absolute;
 	left: 489px;
-	animation: rr 3s 2.4s infinite ease-in;
+	animation: rr 4s 2.4s infinite ease-in;
 }
 
 #rain6{
 	position: absolute;
 	right: 212px;
-	animation: rr 3s 2.3s infinite ease-in;
+	animation: rr 4s 2.3s infinite ease-in;
 }
 
 #rain7{
 	position: absolute;
 	right: 285px;
-	animation: rr 3s 0.3  infinite ease-in;
+	animation: rr 4s 0.3  infinite ease-in;
 }
 #rain8{
 	position: absolute;
 	right: 359px;
-	animation: rr 3s 1.8s infinite ease-in;
+	animation: rr 4s 1.8s infinite ease-in;
 }
 #rain9{
 	position: absolute;
 	right: 435px;
-	animation: rr 3s 2.6s infinite ease-in;
+	animation: rr 4s 2.6s infinite ease-in;
 }
 #rain10{
 	position: absolute;
 	right: 510px;
-	animation: rr 3s 0.5s infinite ease-in;
+	animation: rr 4s 0.5s infinite ease-in;
 }
 
 #rain11{
 	position: absolute;
 	right: 594px;
-	animation: rr 3s 1s infinite ease-in;
+	animation: rr 4s 1s infinite ease-in;
 }
 
 @keyframes rr{
-			from{bottom: 2000px;} to{bottom: 500px;}
+			from{bottom: 2850px;} to{bottom: 1000px;}
 		}
 
 
