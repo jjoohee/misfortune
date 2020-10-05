@@ -505,13 +505,13 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 
 #tree3{
 	position: absolute;
-	left: -70px; bottom: 200px;
+	left: -70px; bottom: 850px;
 	animation: treemove-e 2s infinite linear alternate;
 }
 
 #tree3_1{
 	position: absolute;
-	right: -70px; bottom: 200px; 
+	right: -70px; bottom: 850px; 
 	animation: treemove 2s infinite linear alternate;
 }
 
