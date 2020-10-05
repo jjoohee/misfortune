@@ -1,4 +1,4 @@
-           @font-face {
+                @font-face {
     font-family: 'MapoGoldenPier';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
     font-weight: normal;
@@ -31,7 +31,7 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 }
 
 #moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;
-		opacity: 0%}
+		opacity: 100%}
 
 		@keyframes lo{
 				from{left: -100px;} to{left: 0px;}
@@ -42,12 +42,12 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 
 #titlee{
 	width: 1200px;
-	height: 620px;
+	height: 700px;
 	position: absolute;
 	left: calc(50% - 600px);
 	top: 0px;
 	background: black;
-
+	z-index: 1000;
 }
 
 #timg{
@@ -124,10 +124,11 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 
 }
 
-#back3-1{
+#back3_1{
 	position: absolute;
 	left: -15px;
-	top: 4300px;
+	top: 4250px;
+	transition: 2s all;
 
 }
 
@@ -149,6 +150,7 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 	position: absolute;
 	left: calc(50% - 600px);
 	bottom: -50px;
+	transition: 2s all;
 
 }
 
@@ -156,6 +158,16 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 	position: absolute;
 	left: calc(50% - 600px);
 	bottom: 585px;
+	transition: 2s all;
+
+}
+
+#back8{
+	position: absolute;
+	left: calc(50% - 600px);
+	bottom: 0px;
+	transition: 1.5s all;
+	opacity: 0%;
 
 }
 
@@ -443,8 +455,7 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 	position: absolute;
 	right: 210px;
 	top: 3250px;
-	transition: all 0.5s, opacity 2s;
-	
+	transition: all 0.5s, opacity 2s;	
 }
 
 
@@ -528,6 +539,7 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 	top: 50px;
 	position: absolute;
 	text-align: center;
+	
 }
 
 #text1{
