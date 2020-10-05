@@ -54,7 +54,20 @@ window.onscroll = function(){
             hand3.style.top = "";
             hand3.style.transform = "";
             }
-    }    
+
+            if (t > 5500) {
+           back6.style.filter = "brightness(1.8)";
+           back3_1.style.filter = "brightness(1.5)";
+           back7.style.filter = "brightness(1.5)";
+           back8.style.opacity = "100%";
+            }
+            else{
+                back6.style.filter = "";
+                 back3_1.style.filter = "";
+                  back7.style.filter = "";
+                 back8.style.opacity = "";
+            }
+    }
 
 //스크롤시 다른 링크로 이동
 
