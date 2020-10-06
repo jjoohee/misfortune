@@ -1,7 +1,19 @@
-
 window.onscroll = function(){
         var t =document.documentElement.scrollTop + document.body.scrollTop;
         moniter.innerHTML = t
+             if (t > 850) {
+            text11.style.opacity = "100%";
+
+            }
+            else{
+                 text11.style.opacity = "";}
+
+              if (t > 2000) {
+            text2.style.opacity = "100%";
+
+            }
+            else{
+                  text2.style.opacity = "";}
 
             if (t > 2800) {
             human1_1.style.opacity = "100%";
@@ -54,6 +66,13 @@ window.onscroll = function(){
             hand3.style.top = "";
             hand3.style.transform = "";
             }
+
+             if (t > 4800) {
+            text5.style.opacity = "100%";
+
+            }
+            else{
+                  text5.style.opacity = "";}
 
             if (t > 5500) {
            back6.style.filter = "brightness(1.8)";
