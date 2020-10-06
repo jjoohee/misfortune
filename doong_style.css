@@ -545,9 +545,16 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 #text1{
 	top: 600px;
 }
+#text11{
+	opacity: 0%;
+	transition: 1.5s all;
+}
+
 
 #text2{
 	top: 1750px;
+	opacity: 0%;
+	transition: 1.5s all;
 
 }
 
@@ -561,6 +568,8 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 
 #text5{
 	top: 4640px;
+	opacity: 0%;
+	transition: 1.5s all;
 }
 
 #text6{
