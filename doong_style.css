@@ -31,7 +31,7 @@ transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
 }
 
 #moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;
-		opacity: 100%}
+		opacity: 0%}
 
 		@keyframes lo{
 				from{left: -100px;} to{left: 0px;}
