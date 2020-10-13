@@ -101,7 +101,7 @@ window.onscroll = function(){
         
      if (Math.round( $(window).scrollTop()) == $(document).height() - $(window).height()) {
         
-       var url = "https://jjoohee.github.io/battle-of-misfortunes/";
+       var url = "https://jjoohee.github.io/om/";
 		$(location).attr('href',url);
         
     }
